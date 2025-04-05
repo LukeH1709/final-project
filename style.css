@@ -1,0 +1,66 @@
+html {
+    height: 100%;
+    width: 100%;
+    background-color: #4b4b4b;
+  }
+  #title {
+    font-size: 75px;
+    float: left;
+  }
+  
+  .base {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    color: beige;
+    user-select: none;
+  }
+
+  .swordStyle {
+    border: solid;
+    border-radius: 5px;
+    animation: rotation 15s infinite linear;
+    
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+  hr {
+    width: 200%;
+    margin-left: -50%;
+  }
+
+  #slashes {
+    font-size: 26px;
+  }
+
+  #clickSword:hover {
+    opacity: 0.9;
+    cursor: pointer;
+  }
+
+  #clickSword:active {
+    opacity: 0.8;
+  }
+
+  #trainee {
+    background-color: #1c1c1c;
+    border: solid 1px;
+    border-radius: 50px;
+  }
+
+  #trainee > img {
+    margin: 5px;
+    width: 75px;
+    border: solid;
+    border-radius: 50px;
+}
