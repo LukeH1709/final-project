@@ -1,21 +1,5 @@
-// Get elements for Sword
-let clickSword = document.getElementById('clickSword');
-let clickCountDisplay = document.getElementById('clickCount');
-// Initialize click count
-let clickCount = 0;
-// Click event listener
-clickSword.addEventListener('click', () => {
-  clickCount++;
-  clickCountDisplay.textContent = clickCount;
-});
+let sword = document.querySelector('.slash-cost');
 
-// Upgrades
-
-//Trainee Upgrade
-let trainee = document.getElementById('trainee');
-trainee.addEventListener('click', function() {
-  if (clickCount >= 10) {
-    clickCount++;
-    clickCount - 10;
-  }
-})
+function incrementSword() {
+  sword.innerHTML = parseFloat(sword.innerHTML) + 1;
+}

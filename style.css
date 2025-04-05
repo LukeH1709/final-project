@@ -1,66 +1,79 @@
 html {
     height: 100%;
     width: 100%;
-    background-color: #4b4b4b;
-  }
-  #title {
-    font-size: 75px;
-    float: left;
-  }
-  
-  .base {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+    background-color: #1b1b1b;
     color: beige;
     user-select: none;
   }
 
-  .swordStyle {
-    border: solid;
-    border-radius: 5px;
-    animation: rotation 15s infinite linear;
-    
-  }
+  /*Style*/
+.left h3 {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 50px;
+}
 
-  @keyframes rotation {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(359deg);
-    }
-  }
+.sword-image {
+  width: 160px;
+  border: 4px beige solid;
+  border-radius: 5px;
+  background-color: #424242;
+}
 
-  hr {
-    width: 200%;
-    margin-left: -50%;
-  }
+.sword-image:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
 
-  #slashes {
-    font-size: 26px;
-  }
+.sword-image:active {
+  opacity: 0.8;
+  transform: scale(1.02);
+}
 
-  #clickSword:hover {
-    opacity: 0.9;
-    cursor: pointer;
-  }
+  /*Setup*/
+body {
+  display: grid;
+  place-items: center;
+  height: 65vh;
+  margin: 0;
+  padding: 0;
+}
 
-  #clickSword:active {
-    opacity: 0.8;
-  }
+.main {
+  display: flex;
+  gap: 200px;
+}
 
-  #trainee {
-    background-color: #1c1c1c;
-    border: solid 1px;
-    border-radius: 50px;
-  }
+.upgrade {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 330px;
+  height: 60px;
+  border: 4px beige solid;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
 
-  #trainee > img {
-    margin: 5px;
-    width: 75px;
-    border: solid;
-    border-radius: 50px;
+.cost-info {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.mid-section h4 {
+  margin: 0;
+}
+
+.mid-section p {
+  margin: 0;
+}
+
+.upgrade-img {
+  width: 55px;
+}
+
+.swordUpgrade-icon {
+  width: 20px;
+  height: 20px;
 }

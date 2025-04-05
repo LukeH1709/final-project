@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Clicker Game</title>
+  <title>Sword Clicker</title>
   <link href="style.css" rel="stylesheet">
 </head>
 <body>
-  <div class="base">
-  <h1 id="title">Sword Clicker!</h1>
-  
-  <img src="Images/minecraft_woodensword.png" alt="sword" id="clickSword" class="swordStyle" draggable="false">
-  <br>
-  <br>
-  <p id="slashes">Slashes: <span id="clickCount">0</span></p>
-  <br>
-  <br>
-  <hr>
-  <div class="bottom">
-    <div class="upgrade">
-      <div id="trainee">
-        <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="trainee">
+  <section>
+    <div class="main">
+      <div class="left">
+        <img src="Images/minecraft_woodensword.png" alt="Sword" class="sword-image" onclick="incrementSword()" draggable="false">
+        <h3>Slashes: <span class="slash-cost">0</span></h3>
+      </div>
+      <div class="right">
+        <div class="upgrade">
+          <div class="left-section">
+            <img src="Images/placeholder.png" alt="trainee" class="upgrade-img">
+          </div>
+          <div class="mid-section">
+            <h4>Trainee</h4>
+            <div class="cost-info">
+              <p>Cost: 30</p>
+              <img src="Images/swordiconw.png" alt="sword-icon" class="swordUpgrade-icon">
+            </div>
+          </div>
+          <div class="right-section">
+            <p>Level 0</p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  </div>
-  
+  </section>
   <script src="script.js"></script>
 </body>
 </html>
