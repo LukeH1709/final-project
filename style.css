@@ -30,6 +30,16 @@ html {
   transform: scale(1.02);
 }
 
+.upgrade:hover {
+  opacity: 0.8725;
+  cursor: pointer;
+}
+
+.upgrade:active {
+  opacity: 0.7;
+  transform: scale(1.02);
+}
+
   /*Setup*/
 body {
   display: grid;
@@ -53,6 +63,8 @@ body {
   border: 4px beige solid;
   border-radius: 5px;
   padding: 10px 20px;
+  position: relative;
+  margin-bottom: 17.5px;
 }
 
 .cost-info {
@@ -63,6 +75,8 @@ body {
 
 .mid-section h4 {
   margin: 0;
+  margin-bottom: 20px;
+  font-size: 20px;
 }
 
 .mid-section p {
@@ -76,4 +90,19 @@ body {
 .swordUpgrade-icon {
   width: 20px;
   height: 20px;
+}
+
+.next-level-info {
+  position: absolute;
+  right: -112.25px;
+  height: 80px;
+  width: 100px;
+  text-align: center;
+  display: none;
+  border: 2px solid beige;
+  border-radius: 5px;
+}
+
+.upgrade:hover .next-level-info {
+  display: block;
 }
