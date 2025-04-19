@@ -8,8 +8,10 @@
   <section>
     <div class="main">
       <div class="left">
+        <h1>Sword Clicker!</h1>
         <img src="Images/minecraft_woodensword.png" alt="Sword" class="sword-image" onclick="incrementSword()" draggable="false">
         <h3>Slashes: <span class="slash-cost">0</span></h3>
+        <h5>Version 1.0</h5>
       </div>
       <div class="right">
         <div class="upgrade" onclick="buyClicker()">
@@ -49,6 +51,46 @@
           <div class="next-level-info">
             <p>
               +<span class="autoSword-increase">0</span> slashes <br /> per second.
+            </p>
+          </div>
+        </div>
+        <div class="upgrade" onclick="buyswordMiner()">
+          <div class="left-section">
+            <img src="Images/pickaxe.png" alt="swordMiner" class="upgrade-img">
+          </div>
+          <div class="mid-section">
+            <h4>Sword Miner</h4>
+            <div class="cost-info">
+              <p>Cost: <span class="swordMiner-cost">750</span></p>
+              <img src="Images/swordiconw.png" alt="sword-icon" class="swordUpgrade-icon">
+            </div>
+          </div>
+          <div class="right-section">
+            <p>Level <span class="swordMiner-level">0</span></p>
+          </div>
+          <div class="next-level-info">
+            <p>
+              +<span class="swordMiner-increase">0</span> slashes <br /> per second.
+            </p>
+          </div>
+        </div>
+        <div class="upgrade" onclick="buykatana()">
+          <div class="left-section">
+            <img src="Images/katana.png" alt="katana" class="upgrade-img">
+          </div>
+          <div class="mid-section">
+            <h4>Katana</h4>
+            <div class="cost-info">
+              <p>Cost: <span class="katana-cost">1600</span></p>
+              <img src="Images/swordiconw.png" alt="sword-icon" class="swordUpgrade-icon">
+            </div>
+          </div>
+          <div class="right-section">
+            <p>Level <span class="katana-level">0</span></p>
+          </div>
+          <div class="next-level-info">
+            <p>
+              +<span class="katana-increase">0</span> slashes <br /> per second.
             </p>
           </div>
         </div>

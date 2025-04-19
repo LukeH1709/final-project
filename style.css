@@ -13,6 +13,10 @@ html {
   margin-top: 50px;
 }
 
+.left h5 {
+  text-align: center;
+}
+
 .sword-image {
   width: 160px;
   border: 4px beige solid;
@@ -105,4 +109,8 @@ body {
 
 .upgrade:hover .next-level-info {
   display: block;
+}
+.left > h1 {
+  text-align: center;
+  border: 2px solid beige;
 }
